@@ -9,6 +9,8 @@ dotenv.config();
 const app = express();
 const PORT = 5000 || process.env.PORT;
 
+app.use(express.static('public'));
+
 
 //Template Engines
 app.use(expressLayout);
