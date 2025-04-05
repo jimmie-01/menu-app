@@ -18,3 +18,11 @@ module.exports.get_about = (req, res) => {
 	res.render('about');
 }
 
+/**
+ * GET /
+ * Main - Menu Page
+ */
+
+module.exports.get_menu = (req, res) => {
+	res.render('menu');
+}
