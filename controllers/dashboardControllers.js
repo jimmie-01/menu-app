@@ -6,5 +6,5 @@
  */
 
 module.exports.get_dashboard = (req, res) => {
-	res.render('dashboard');
+	res.render('admin/dashboard');
 }
