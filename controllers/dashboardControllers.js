@@ -1,4 +1,4 @@
-
+const adminLayout = '../views/layouts/admin';
 
 /**
  * GET /
@@ -6,5 +6,5 @@
  */
 
 module.exports.get_dashboard = (req, res) => {
-	res.render('admin/dashboard');
-}
+	res.render('admin/dashboard', { layout: adminLayout });
+};

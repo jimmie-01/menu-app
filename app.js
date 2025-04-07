@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const mainRoutes = require('./server/routes/routes');
+const dashBoardRoutes = require('./server/routes/dashboard');
 
 const expressLayout = require('express-ejs-layouts');
 
@@ -19,6 +20,7 @@ app.set('view engine', 'ejs');
 
 
 app.use('', mainRoutes);
+app.use('', dashBoardRoutes);
 
 
 app.listen(PORT, () => {
