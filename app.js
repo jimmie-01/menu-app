@@ -4,11 +4,15 @@ const mainRoutes = require('./server/routes/routes');
 const dashBoardRoutes = require('./server/routes/dashboard');
 
 const expressLayout = require('express-ejs-layouts');
+const connectDB = require('./server/config/db');
 
 dotenv.config();
 
 const app = express();
 const PORT = 5000 || process.env.PORT;
+
+// Connect Database
+connectDB();
 
 app.use(express.static('public'));
 
