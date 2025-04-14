@@ -15,6 +15,10 @@ const menuSchema = new Schema({
 		required: true
 	},
 	price: {
-		type: 
+		type: Number,
+		required: true
 	}
-})
+});
+
+
+module.exports = mongoose.model('Menu', menuSchema);
